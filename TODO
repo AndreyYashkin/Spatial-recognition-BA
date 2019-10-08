@@ -1,0 +1,5 @@
+- Fill readme.md
+- Rework the title
+- Remove pagebreak after chapters(?)
+- Remove need to add \thispagestyle{fancy} on every new chapters to show "Team #5: Work in progress" head
+- Create our own logo
