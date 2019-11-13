@@ -2,9 +2,21 @@
 
 \subsection{Solution based on OpenCV using filters}
 
+First attempt to create desired \textit{computer vision} system was done using OpenCV and image filtering
+in order to locate the positions of tubes on image. All tubes were marked with colored rings.
+A specially tuned filter found tubes by their rings. However, that approach had several unacceptable cons
+\begin{itemize}
+	\item tubes making was not reliable, because rings were not fixed and could break away
+	\item image filter had to be manually recalibrated after any light changes
+\end{itemize}
+
 \subsection{Solution based on DNN}
 
+There was an another solution based on deep neural network. It did not require to make any special marks
+an tubes and was reliable regardless of the environment around tubes, but required a big prepared taring dataset
+to educate neural network. Desire the good prediction quality of tubes positions on pictures it could not be
+used to find their position in space and was not trained to find other important types of objects like manipulator or shaker.
 
-\section{Proposed solution}
+%\section{Proposed solution}
  
 % I have and idea - Andrey

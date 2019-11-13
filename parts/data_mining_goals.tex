@@ -1,1 +1,26 @@
- 
+\begin{itemize}
+	\item Our first task is to solve the problem of object recognition by
+	predicting correct bounding boxes of tubes.
+	
+	\begin{itemize}
+		\item Based on the specifics of the task (human can detect tubes with almost 100\% accuracy), we need to get a high percentage of recognition accuracy and IoU. The desired result can be considered as 90+\% accuracy and 0.7+ IoU. The exact value of IoU metric must be clarified based on the capabilities of the robot/manipulator.
+		
+		\item We suggest that the task of recognizing tubes does not require a high recognition speed rate, so deep neural networks can be used to get the best metrics.
+	\end{itemize}
+	
+	\item Our second task is to solve the same problem of object recognition, but for manipulator, shaker and box. This task has some differences from the previous one.
+	
+	\begin{itemize}
+		\item We do not have dataset with ground truth bounding boxes of manipulator, shaker and box, therefore the dataset must be marked. We suggest that at least 1000 pictures with correct bounding boxes for each item are needed to solve this task.
+		
+		\item Having the model from the first task, we can try to extract some high level features to recognize manipulator, shaker and box. In this way we do not need to learn completely new model. 
+		
+		\item We expect that model can get high recognition accuracy and IoU with approximately the same values as in the previous task.
+	\end{itemize}
+	
+	\item And our last task is to create a system that is able to find the position of an object in space.
+	\begin{itemize}
+		\item We also do not have pictures set for this task. Thus the dataset (set of a pair of photographs from different angles) must be created and marked. 
+		\item This problem is outside the field of machine learning and can be solved by linear algebra. In this case, we do not need a large dataset and photos are only needed to understand the problem and to test the algorithms.
+	\end{itemize}
+\end{itemize} 
