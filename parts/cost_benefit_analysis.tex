@@ -1,11 +1,47 @@
-% Construct a cost-benefit analysis for the project, which compares 
-% the costs of the project with the potential benefit to the business x
-% the costs of the project with the potential benefit to the business if it is successful. 
-% The comparison should be as specific as possible, for example using monetary measures in a commercial situation
+\section{Benefits}
 
-In the process of project analysis were found several benefits
+We need to start with how much money is spent manually working with tubes.
+
 \begin{itemize}
-	\item This project will save the time of scientists
-	\item Created CV system will have the potential to be reused in different other domains
+\item The scientific worker must shake the tubes every day from 0 to 3 times. Even using a shaker, he has to control the process, spending up to half an hour a day (for each shaking). 
+
+\item Salary analysis shows that a scientific worke at NSU receives 20-26 thousand rubles a month with a 4 hour working day. This means that in the worst case, we spend 9 thousand rubles a month on shaking tubes (for each scientific worker). In average scenario - about 3 thousand rubles a month, which is a big number anyway.
+
+\item The Institute of Catalysis has about 20 employees who need to shake tubes sometimes. So we can conclude that it takes 40 to 180 thousand rubles a month to shake the tubes (the most real value is about 70 thousand).
 \end{itemize}
-No special costs for this project is required, only costs of working hours.
+\newline
+We should also take into account the fact that getting rid of monotonous work has a positive effect on employee loyalty and work efficiency. We can't measure the effect of this in numbers, but: 
+\begin{itemize}
+    \item Automation of the tube shaking process saves on average 15\% of the working time (as noted above).
+    \item Automation of routine processes increases employee loyalty up to 10\%.
+    \item The Copenhagen School of Marketing calculated that if employee loyalty increases by 1, then customer loyalty increases by 1.25. And if customer loyalty increased by 1\%, then profit in the next quarter will grow by 0.885\%. This is not quite our case, but it’s useful to have this information in mind - loyalty is very important thing.
+\end{itemize}
+Thus, we get the following:
+\begin{itemize}
+    \item \textbf{Cost reduction}: 40 to 180 thousand rubles per month;
+    \item \textbf{Work efficiency improvement}: up to 15\%;
+    \item \textbf{Increase employee loyalty}: up to 10\%;
+\end{itemize}
+\newline
+It is worth noting that in this case we choose between reducing costs and increasing work efficiency: we either reduce the working day or free up workers time for new tasks.
+
+\section{Costs}
+
+\begin{itemize}
+
+\item We don't have labeled datasets for manipulator, shaker and box. We can label photos in Yandex.Toloka for 1 ruble each. Also we don't even have photos - according to Yandex.Toloka again, to make one photo costs 3 rubles. Up to 3 thousand labeled photos may be required, so it takes up to 10 thousand rubles.
+
+\item We also need powerful GPU to train our model. We suggest that it may take up to 50 hours of training on the GPU Nvidea GTX 2080ti. It will require up to 6 thousand rubles.
+
+\item Our team has an expert in machine learning and computer vision and we can train the model on our own. The project will take a month of work at full time. We evaluate ourselves as novice developers, so the salary per team is expected to reach 200 thousand rubles.
+\end{itemize}
+\newline
+Thus, we get the following:
+\begin{itemize}
+    \item \textbf{Dataset Cost}: up to 10 thousand rubles;
+    \item \textbf{GPU rental cost}: up to 6 thousand rubles;
+    \item \textbf{Salary for team}: 200 thousand rubles;
+    \item \textbf{Total costs}: up to 216 thousand rubles;
+\end{itemize}
+\newline
+Therefore, in the best case, the project will pay for itself in 2 months, at worst - for six months (if you choose a cost reduction strategy instead of a performance improvement strategy) and then and will continue to be profitable in the amount of 40-180 thousand monthly (on average around 70 thousand). This makes the project very profitable for long-term investments.
